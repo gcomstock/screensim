@@ -71,11 +71,11 @@ function setScale() {
   //determine wether to use width or height to scale screen
   //so when used resizes window wide or tall, it will measure by the longest side
   if (windowWidth*0.65 > windowHeight)
-    imageScale = windowHeight
+    imageScale = windowHeight;
   else
-    imageScale = windowWidth*0.65
+    imageScale = windowWidth*0.65;
 
-  imageScale = imageScale*0.00059
+  imageScale = imageScale*0.00059;
   bezelPadding = Math.round(imageScale*60);
 
 //console.log('imageScale: '+imageScale)
@@ -168,10 +168,11 @@ function setLink() {
 function updateAddress() {
 
   var link = $('#navUrl').val();
+  var urlParams = '';
 
   //if all settings are default, then dont put url params on the url
   if (link == 'screensim.com/home' && screenSim.activeDevice == 'web' && screenSim.web.option == 8) {
-    var urlParams = ''
+    //var urlParams = '';
   }
   else {
     link = encodeURIComponent(link);
