@@ -107,7 +107,7 @@ img {border : 0;}
 	position: fixed;
 	top: -100%;
 	left: 0;
-	background: url(../_img/diag_bg.png);
+	background: url(../img/diag_bg.png);
 	background-size: 2px;
 	opacity: 0;
 	width: 100%;
@@ -138,7 +138,7 @@ img {border : 0;}
 	color: #006edc;
 	font-weight: bold;
 	-webkit-font-smoothing: subpixel-antialiased;
-	background-image: url(../_img/diag_bg3.png);
+	background-image: url(../img/diag_bg3.png);
 	background-size: 2px;
 	cursor: pointer;
 	letter-spacing: 1px;
@@ -193,7 +193,7 @@ img {border : 0;}
 	position: relative;
 	padding-left: 15%;
 
-	background-image: url(../_img/squairy_light.png);
+	background-image: url(../img/squairy_light.png);
 	border-bottom: 1px solid #006edc;
 
 	/* hide wrapper until initial animation is done */
@@ -307,18 +307,18 @@ img {border : 0;}
 .icon.web {
 	width: 44%;
 	margin-right: 5%;
-	background-image: url(../_img/icon_web.png);
+	background-image: url(../img/icon_web.png);
 }
 
 .icon.tablet {
 	width: 22%;
 	margin-right: 5%;
-	background-image: url(../_img/icon_tablet.png);
+	background-image: url(../img/icon_tablet.png);
 }
 
 .icon.mobile {
 	width: 11%;
-	background-image: url(../_img/icon_mobile.png);
+	background-image: url(../img/icon_mobile.png);
 }
 
 

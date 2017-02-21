@@ -10,7 +10,7 @@
 #screenWrapper.web #screenStand {
 	display: inline-block;
 
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 
 	border-left: 1px solid #006edc;
@@ -72,7 +72,7 @@
 	border: 2px solid #14141c;
 	border-radius: 1em;
 	border: 1px solid #5096dc;
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 }
 
@@ -91,7 +91,7 @@
 	width: 1.3em;
 	height: 1.3em;
 	border: 1px solid #5096dc;
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 
 	top: -4em;
@@ -159,7 +159,7 @@
 	width: 1.3em;
 	height: 1.3em;
 	border: 1px solid #5096dc;
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 
 	top: 3em;

@@ -28,7 +28,7 @@
 	border: 1px solid #006edc;
 	position: relative;
 	display: inline-block;
-	background-image: url(../_img/diag_bg.png);
+	background-image: url(../img/diag_bg.png);
 	background-size: 2px;
 	margin-top: -40px;
 }
@@ -53,7 +53,7 @@
 	position: absolute;
 	border-radius: 50%;
 	border: 1px solid #5096dc;
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 	overflow: hidden;
 }
@@ -80,7 +80,7 @@
 	height: 100%;
 	position: relative;
 
-	background-image: url(../_img/diag_bg_dark.png);
+	background-image: url(../img/diag_bg_dark.png);
 	background-size: 2px;
 
 	border-top: 1px solid #c8e6ff;
@@ -139,7 +139,7 @@
 	font-size: 1.5em;
 
 	background-color: #eee;
-	background-image: url(../_img/diag_bg_white.png);
+	background-image: url(../img/diag_bg_white.png);
 	background-size: 2px;
 
 	position: absolute;
@@ -178,7 +178,7 @@
 	color: #006edc;
 	font-weight: bold;
 	-webkit-font-smoothing: subpixel-antialiased;
-	background-image: url(../_img/diag_bg3.png);
+	background-image: url(../img/diag_bg3.png);
 	background-size: 2px;
 	cursor: pointer;
 	letter-spacing: 1px;
