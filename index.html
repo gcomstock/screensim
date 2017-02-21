@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>screensim.com - any screen on any screen</title>
+
+    <link type="text/css" href="_css/style.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="_css/wrapper.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="_css/devices.css" rel="stylesheet" media="screen"/>
+
+    <script type="text/javascript" src="_js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="_js/brain.js"></script>
+    <script type="text/javascript" src="_js/setFunctions.js"></script>
+</head>
+<body>
+
+
+    <div id="messageModal">
+        <p class="message"></p>
+        <br><div class="dismiss">Dismiss</div>
+    </div>
+
+    <div id="messageScreen"></div>
+
+
+    <div id="userPercentHolder">
+        <span id="userPercent">0</span><span id="percent">%</span><span id="ofUsers">of web users</span>
+    </div>
+
+
+    <div id="header" class="viewer">
+        <h1>screen<span>sim</span></h1>
+
+        <div id="deviceMenu">
+            <div class="icon web" data-type="web"></div>
+            <div class="icon tablet" data-type="tablet"></div>
+            <div class="icon mobile" data-type="mobile"></div>
+        </div>
+    </div>
+
+
+    <div id="wrapper">
+
+        <div id="menu">
+            <div id="deviceArrow"></div>
+
+            <div class="submenu web">
+                <div class="option" data-width="1024" data-height="768" data-users="9">
+                    15" Old CRT Screen <span class="res">1024x768</span>
+                </div>
+                <div class="option" data-width="1280" data-height="800" data-users="8">
+                    13" Screen <span class="res">1280x800</span>
+                </div>
+                <div class="option" data-width="1366" data-height="768" data-users="25">
+                    15" Screen <span class="res">1366x768</span>
+                </div>
+                <div class="option" data-width="1280" data-height="1024" data-users="10">
+                    17-19" Screen <span class="res">1280x1024</span>
+                </div>
+                <div class="option" data-width="1440" data-height="900" data-users="7">
+                    19" Screen <span class="res">1440x900</span>
+                </div>
+                <div class="option" data-width="1600" data-height="900" data-users="5">
+                    20" Screen <span class="res">1600x900</span>
+                </div>
+                <div class="option" data-width="1680" data-height="1050" data-users="6">
+                    22" Screen <span class="res">1680x1050</span>
+                </div>
+                <div class="option" data-width="1920" data-height="1080" data-users="10">
+                    23" HD Screen <span class="res">1920x1080</span>
+                </div>
+                <div class="option" data-width="1920" data-height="1200" data-users="3">
+                    24" HD Screen <span class="res">1920x1200</span>
+                </div>
+            </div>
+
+            <div class="submenu tablet">
+                <div class="option" data-width="768" data-height="1024" data-users="NA">
+                    4:3 Ratio <span class="res">iPad</span>
+                </div>
+                <div class="option" data-width="800" data-height="1280" data-users="NA">
+                    16:9 Ratio <span class="res">Nexus 7/10, Kindle Fire</span>
+                </div>
+                <div class="option" data-width="1024" data-height="768" data-users="NA">
+                    4:3 Landscape <span class="res">iPad</span>
+                </div>
+                <div class="option" data-width="1280" data-height="800" data-users="NA">
+                    16:9 Landscape <span class="res">Nexus 7/10, Kindle Fire</span>
+                </div>
+            </div>       
+
+            <div class="submenu mobile">
+                <div class="option" data-width="320" data-height="480" data-users="NA">
+                    3:2 Ratio <span class="res">iPhone4, HTC G1/G2</span>
+                </div>
+                <div class="option" data-width="320" data-height="568" data-users="NA">
+                    16:9 Ratio <span class="res">iPhone5, Galaxy S3/S4</span>
+                </div>
+                <div class="option" data-width="480" data-height="320" data-users="NA">
+                    3:2 Landscape <span class="res">480x320</span>
+                </div>
+                <div class="option" data-width="568" data-height="320" data-users="NA">
+                    16:9 Landscape <span class="res">568x320</span>
+                </div>
+            </div>
+
+        </div><!--/menu-->
+
+
+
+        <div id="screenWrapper">
+
+            <div id="screenFrame">
+                <div id="iPhoneSpeaker"></div>
+
+                <div id="screen">
+                    <div id="browserBar">                      
+                        <div id="navBar">
+                            <div class="item arrow" id="navBack">&#60;</div>
+                            <div class="item arrow" id="navForward">&#62;</div>
+                            <div class="item address">
+                                <div class="relative">
+                                    <input type="text" id="navUrl">
+                                </div>
+                            </div>
+                            <div class="item go">
+                                <div class="relative">
+                                    <input type="button" id="navGo" value="Go">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="creativeHolder">
+                        <iframe id="webView" name="webView" sandbox="allow-same-origin allow-forms allow-scripts allow-top-navigation" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                </div><!--/screen-->
+
+                <div id="iPhoneHomeBtn"></div>
+
+            </div>
+
+            <br><div id="screenStand"></div>
+
+        </div><!--/screenwrapper-->
+
+
+    </div><!--/wrapper-->
+
+
+    <div id="footer">
+        <p class="yourRes">Your screen resolution is <span></span></p>
+        <p class="credit">Created by <a href="http://www.gregcomstock.com" target="_blank">Greg Comstock</a></p>
+    </div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45014684-1', 'screensim.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/*---------------------------------------------------------------------------
+	WEB
+---------------------------------------------------------------------------*/
+
+
+#screenWrapper.web #screenFrame {
+	border-radius: 10px;
+}
+
+#screenWrapper.web #screenStand {
+	display: inline-block;
+
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+
+	border-left: 1px solid #006edc;
+	border-right: 1px solid #006edc;
+
+	display: inline-block;
+
+	-webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+	-moz-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+	margin-bottom: -2px;
+}
+
+#screenWrapper.web #iPhoneHomeBtn {
+	display: none;
+}
+
+#screenWrapper.web #screen {
+	border-radius: 6px;
+}
+
+/*---------------------------------------------------------------------------
+	MOBILE
+---------------------------------------------------------------------------*/
+
+#screenWrapper.mobile #screenFrame {
+	border-radius: 13.5% / 7%;
+	margin-bottom: -50px;
+}
+
+#screenWrapper.mobile.landscape #screenFrame {
+	border-radius: 7% / 13.5%;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+#screenWrapper.mobile #screen {
+	border-radius: 2px;
+}
+
+#screenWrapper.mobile #iPhoneHomeBtn {
+	bottom: 1.7em;
+	left: 40%;
+}
+
+#screenWrapper.mobile.landscape #iPhoneHomeBtn {
+	left: auto;
+	right: 1.7em;
+	top: 40%;
+}
+
+
+#screenWrapper.mobile #iPhoneSpeaker {
+	top: 7em;
+	left: 40%;
+	width: 20%;
+	height: 1.5em;
+
+	position: absolute;
+	border: 2px solid #14141c;
+	border-radius: 1em;
+	border: 1px solid #5096dc;
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+}
+
+#screenWrapper.mobile.landscape #iPhoneSpeaker {
+	top: 40%;
+	left: 7em;
+	width: 1.5em;
+	height: 20%;
+}
+
+
+#screenWrapper.mobile #iPhoneSpeaker:after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 1.3em;
+	height: 1.3em;
+	border: 1px solid #5096dc;
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+
+	top: -4em;
+	left: 38.5%;
+}
+
+#screenWrapper.mobile.landscape #iPhoneSpeaker:after {
+	top: 38.5%;
+	left: -4em;
+}
+
+
+
+
+#screenWrapper.mobile #webView::-webkit-scrollbar {  
+    display: none;
+}
+
+
+/*---------------------------------------------------------------------------
+	TABLET
+---------------------------------------------------------------------------*/
+
+#screenWrapper.tablet #screenFrame {
+	/*border-radius: 13.5% / 7%;*/
+	border-radius: 7% / 4.7%;
+	margin-bottom: -4.7%;
+}
+
+#screenWrapper.tablet.landscape #screenFrame {
+	border-radius: 4.7% / 7%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+	position: relative;
+}
+
+#screenWrapper.tablet #screen {
+	border-radius: 3px;
+}
+
+
+#screenWrapper.tablet #iPhoneHomeBtn {
+	bottom: 1em;
+	left: 45%;
+}
+
+#screenWrapper.tablet.landscape #iPhoneHomeBtn {
+	left: auto;
+	right: 1em;
+	top: 45%;
+}
+
+#screenWrapper.tablet #webView::-webkit-scrollbar {  
+    display: none;
+}
+
+
+
+
+#screenWrapper.tablet #screenFrame:after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 1.3em;
+	height: 1.3em;
+	border: 1px solid #5096dc;
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+
+	top: 3em;
+	left: 50%;
+	margin-left: -0.65em;
+}
+
+#screenWrapper.tablet.landscape #screenFrame:after {
+	top: 50%;
+	left: 3em;
+	margin-top: -0.65em;
+	margin-left: 0;
+}
+
+
+#screenWrapper.tablet #iPhoneSpeaker {
+	display: none;
+}

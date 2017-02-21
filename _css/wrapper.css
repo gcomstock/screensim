@@ -1,0 +1,197 @@
+
+
+/* iframe holder, right below browserBar*/
+#creativeHolder {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+#webView {
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#screenWrapper #screenStand {
+	display: none;
+}
+
+#screenWrapper #screenFrame {
+	border: 1px solid #006edc;
+	position: relative;
+	display: inline-block;
+	background-image: url(../_img/diag_bg.png);
+	background-size: 2px;
+	margin-top: -40px;
+}
+
+#screenWrapper #screen {
+	border: 1px solid #006edc;
+
+	overflow: hidden;
+	position: relative;
+	background-color: #fff;
+
+	text-align: center;
+	width: 100%;
+	height: 100%;
+
+	-webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+	-moz-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+
+#iPhoneHomeBtn {
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid #5096dc;
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+	overflow: hidden;
+}
+
+/*
+#webView::-webkit-scrollbar-track {
+	background: #fff url(../_img/diag_bg_dark.png);
+}
+
+#webView::-webkit-scrollbar-thumb {
+    background: rgba(255,0,0,0.8);
+}
+#webView::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4);
+}
+*/
+
+/*---------------------------------------------------------------------------
+	webView BROWSER CHROME
+---------------------------------------------------------------------------*/
+
+#navBar {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	background-image: url(../_img/diag_bg_dark.png);
+	background-size: 2px;
+
+	border-top: 1px solid #c8e6ff;
+	border-bottom: 1px solid #5096dc;
+	padding: 0 2%;
+
+	display: table;
+}
+
+#navBar .item {
+	display: table-cell;
+	font-family: 'acid';
+	vertical-align: middle;
+	height: 100%;
+}
+
+#navBar .item.arrow {
+	padding-top: 0.15em;
+	font-size: 8em;
+
+	line-height: 0;
+	cursor: pointer;
+	width: 7%;
+	color: #fff;
+
+	-webkit-transition: color 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in;
+	-o-transition: color 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in;
+	transition: color 0.1s ease-in;
+}
+
+#navBar .item.arrow:hover {
+	color: #006edc;
+}
+
+#navBar .item.address {
+	width: 70%;
+}
+
+#navBar .item.go {
+	width: 16%;
+}
+
+.relative {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#navBar #navUrl {
+	border: 1px solid #006edc;
+	border-radius: 3px;
+
+	font-size: 1.5em;
+
+	background-color: #eee;
+	background-image: url(../_img/diag_bg_white.png);
+	background-size: 2px;
+
+	position: absolute;
+	top: 20%;
+	left: 1%;
+	width: 98%;
+	height: 60%;
+
+	padding: 0 0.5em;
+	color: #666;
+
+	-webkit-transition: background-color 0.1s ease-in;
+	-moz-transition: background-color 0.1s ease-in;
+	-o-transition: background-color 0.1s ease-in;
+	-ms-transition: background-color 0.1s ease-in;
+	transition: background-color 0.1s ease-in;
+}
+
+#navBar #navUrl:focus {
+	background-image: none;
+	background-color: #fff;
+	outline: none;
+}
+
+#navBar #navGo {
+	font-size: 2.3em;
+	padding-top: 0.15em;
+	font-family: 'acid';
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 80%;
+	height: 60%;
+	border: 1px solid #006edc;
+	border-radius: 3px;
+	color: #006edc;
+	font-weight: bold;
+	-webkit-font-smoothing: subpixel-antialiased;
+	background-image: url(../_img/diag_bg3.png);
+	background-size: 2px;
+	cursor: pointer;
+	letter-spacing: 1px;
+
+	-webkit-transition: color 0.1s ease-in, background-color 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background-color 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background-color 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background-color 0.1s ease-in;
+	transition: color 0.1s ease-in, background-color 0.1s ease-in;
+}
+
+#navBar #navGo:hover {
+	background-image: none;
+	color: #fff;
+	background-color: #006edc;
+}
